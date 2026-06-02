@@ -13,7 +13,8 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository_owner }}/nanobot
-
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ← 加这行
+  
 jobs:
   build:
     runs-on: ubuntu-latest
